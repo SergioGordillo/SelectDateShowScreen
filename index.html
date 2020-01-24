@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Básico 5 Fechas</title>
+    <script src="main.js"></script>
+    <!-- Crea una página dónde a partir de tres selects con el día del mes, el mes y el año puedas construir un objeto Date,
+    para mostrarlo por pantalla en formato local. Observa qué pasa cuando introduces una fecha que no existe. Invierte los selects para ponerlos año/mes/día. Cuando elija el mes, que me los cargue con el número de días que tiene el mes. Se valida que haya año seleccionado, luego mes seleccionado y luego días. -->
+</head>
+<body>
+    <h2>Este pequeño programa te mostrará la fecha escogida por pantalla</h2>
+
+    <form>
+        <select id="anio" onchange="cargarNumeroDias()"></select>
+        <select id="mes" onchange="cargarNumeroDias()"></select>
+        <select id="dia"></select>
+        <button type="button" id="button" onclick="crearFecha()">Mostrar en pantalla la fecha</button>
+    </form>
+    <br> 
+    <div id="output"></div>
+
+
+    
+
+
+
+    
+</body>
+</html>
